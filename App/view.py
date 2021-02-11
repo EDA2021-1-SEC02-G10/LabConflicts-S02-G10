@@ -51,7 +51,7 @@ def loadBooks():
     """
     Carga los libros
     """
-    return controller.loadBooks('GoodReads/books-small.csv')
+    return controller.loadBooks('GoodReads/books.csv')
 
 
 def loadTags():
@@ -65,7 +65,10 @@ def loadBookTags():
     Cargar los Tags de libros
     """
     # TO-DO: Modificación de Est-1 en el Lab 2
-    return controller.loadBooks('GoodReads/book_tags-small.csv')
+    btfile = cf.data.dir + filename
+    return model.addbooksTags(btfile)
+    
+
 
 """
 Menu principal
@@ -79,8 +82,12 @@ while True:
         print('Total de libros cargados: ' + str(lt.size(books)))
 
         # TO-DO: Modificación de Est-1 en el Lab 2
+<<<<<<< HEAD
         print('Primer libro cargado:' + str(lt.first(books)))
 
+=======
+        print("3- Cargar Book-Tags!")
+>>>>>>> origin/main
         # TO-DO: Modificación de Est-2 en el Lab 2
         print('Último libro cargado: ' + str(lt.lastElement(books)))
 
