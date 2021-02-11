@@ -65,12 +65,7 @@ def loadBookTags():
     Cargar los Tags de libros
     """
     # TO-DO: Modificación de Est-1 en el Lab 2
-<<<<<<< HEAD
     return controller.loadBooks('GoodReads/book_tags-small.csv')
-=======
-    btfile = cf.data.dir + filename
-    return model.addbooksTags(btfile)
->>>>>>> main
 
 """
 Menu principal
