@@ -66,6 +66,8 @@ def loadBookTags():
     # TO-DO: Modificación de Est-1 en el Lab 2
     btfile = cf.data.dir + filename
     return model.addbooksTags(btfile)
+    
+
 
 """
 Menu principal
@@ -79,8 +81,7 @@ while True:
         print('Total de libros cargados: ' + str(lt.size(books)))
 
         # TO-DO: Modificación de Est-1 en el Lab 2
-
-
+        print("3- Cargar Book-Tags!")
         # TO-DO: Modificación de Est-2 en el Lab 2
         print('Último libro cargado: ' + str(lt.lastElement(books)))
 
